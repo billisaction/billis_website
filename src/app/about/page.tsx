@@ -4,6 +4,12 @@ import { Story } from "@/components/sections/Story";
 import { Partners } from "@/components/sections/Partners";
 import { Donate } from "@/components/sections/Donate";
 import Image from "next/image";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About Us",
+  description: "Learn about the Bilis Initiative, our mission, our history, and our commitment to ending FGM in Somali communities.",
+};
 
 export default function AboutPage() {
   return (

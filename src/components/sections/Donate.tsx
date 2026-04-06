@@ -31,6 +31,7 @@ export function Donate() {
             <Button
               key={tier.amount}
               onClick={() => setActiveTier(tier.amount)}
+              aria-pressed={activeTier === tier.amount}
               className={`h-auto flex flex-col items-center gap-1 rounded-sm border px-7 py-4 font-sans transition-all duration-200 ${
                 activeTier === tier.amount
                   ? "border-white bg-white/25 text-white"

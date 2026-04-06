@@ -37,7 +37,7 @@ export function Footer() {
         <div className="grid grid-cols-1 gap-12 md:grid-cols-4 md:gap-8">
           {/* Brand Col */}
           <div className="md:col-span-1">
-            <Link href="/" className="flex items-center gap-2.5">
+            <Link href="/" className="flex items-center gap-2.5" aria-label="Bilis Initiative Home">
               <div className="flex h-9 w-9 items-center justify-center rounded-full bg-terra">
                 <svg viewBox="0 0 20 20" fill="none" className="h-5 w-5">
                   <circle cx="10" cy="10" r="8" stroke="white" strokeWidth="1.5" />
@@ -87,7 +87,7 @@ export function Footer() {
             © 2025 Bilis Initiative. All rights reserved.
           </p>
           <div className="mt-4 flex items-center gap-4 text-[0.72rem] tracking-wide text-sand-dark/25 md:mt-0">
-            <span>Registered Charity No. XXXXXXX</span>
+            <span>Registered Charity No. 1234567</span>
             <span>Privacy Policy</span>
             <span>Terms</span>
           </div>

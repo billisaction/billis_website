@@ -18,9 +18,32 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Bilis Initiative | Ending FGM, Empowering Girls",
+  title: {
+    default: "Bilis Initiative | Ending FGM, Empowering Girls",
+    template: "%s | Bilis Initiative",
+  },
   description:
     "A community-driven organisation ending FGM and advancing the rights, dignity, and empowerment of women and girls in Somali communities.",
+  keywords: ["FGM", "Ending FGM", "Somali communities", "Women empowerment", "Girls education", "NGO", "Bilis Initiative"],
+  authors: [{ name: "Bilis Initiative" }],
+  creator: "Bilis Initiative",
+  openGraph: {
+    type: "website",
+    locale: "en_GB",
+    url: "https://bilis-initiative.org",
+    title: "Bilis Initiative | Ending FGM, Empowering Girls",
+    description: "A community-driven organisation ending FGM and advancing the rights, dignity, and empowerment of women and girls in Somali communities.",
+    siteName: "Bilis Initiative",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Bilis Initiative | Ending FGM, Empowering Girls",
+    description: "A community-driven organisation ending FGM and advancing the rights, dignity, and empowerment of women and girls in Somali communities.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({

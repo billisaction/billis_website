@@ -16,7 +16,7 @@ export function Stats() {
       desc: "One of the highest rates globally",
     },
     {
-      num: "10+",
+      num: "0",
       label: "Acceptable cases",
       desc: "No medical benefit. No justification.",
     },

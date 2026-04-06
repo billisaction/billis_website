@@ -4,6 +4,12 @@ import { ImpactStrip } from "@/components/sections/ImpactStrip";
 import { Partners } from "@/components/sections/Partners";
 import { Donate } from "@/components/sections/Donate";
 import Image from "next/image";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Our Impact",
+  description: "See the tangible results of Bilis Initiative's work in ending FGM and the lives transformed through our community-led initiatives.",
+};
 
 export default function ImpactPage() {
   return (

@@ -2,6 +2,12 @@ import { Programs } from "@/components/sections/Programs";
 import { Objectives } from "@/components/sections/Objectives";
 import { Donate } from "@/components/sections/Donate";
 import Image from "next/image";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "What We Do",
+  description: "Explore the programs and initiatives run by Bilis Initiative to end FGM and empower girls through education and advocacy.",
+};
 
 export default function WhatWeDoPage() {
   return (

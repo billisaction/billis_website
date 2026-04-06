@@ -23,10 +23,10 @@ export function Navbar() {
   const [isOpen, setIsOpen] = React.useState(false);
 
   return (
-    <nav className="sticky top-0 z-50 w-full font-sans bg-earth px-6 py-4 md:px-10">
+    <nav className="sticky top-0 z-50 w-full font-sans bg-earth px-6 py-4 md:px-10" aria-label="Main Navigation">
       <div className="mx-auto flex max-w-7xl items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2.5">
+        <Link href="/" className="flex items-center gap-2.5" aria-label="Bilis Initiative Home">
           <div className="flex h-9 w-9 items-center justify-center rounded-full bg-terra">
             <svg viewBox="0 0 20 20" fill="none" className="h-5 w-5">
               <circle cx="10" cy="10" r="8" stroke="white" strokeWidth="1.5" />

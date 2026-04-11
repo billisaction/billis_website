@@ -1,10 +1,11 @@
 import { Button } from "@/components/ui/button";
-import { MapPin } from "lucide-react";
+import { MapPin, ChevronDown } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export function Hero() {
   return (
-    <section className="relative min-h-[90vh] overflow-hidden bg-earth">
+    <section className="relative min-h-[90vh] flex flex-col justify-center overflow-hidden bg-earth">
       <div className="grid h-full grid-cols-1 md:grid-cols-2">
         {/* Hero Content */}
         <div className="z-10 flex flex-col justify-center px-8 py-20 md:px-14 md:py-24">
@@ -24,9 +25,10 @@ export function Hero() {
             </Button>
             <Button
               variant="outline"
+            
               className="h-auto rounded-sm border-white/30 bg-transparent px-8 py-3.5 text-[0.9rem] font-normal uppercase tracking-wider text-sand hover:border-sand hover:bg-transparent"
             >
-              Learn More
+              <Link href="/about">Learn More</Link>
             </Button>
           </div>
         </div>
@@ -89,6 +91,12 @@ export function Hero() {
             ))}
           </div>
         </div>
+      </div>
+      
+      {/* Scroll Indicator */}
+      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/40 animate-bounce">
+        <span className="text-[0.65rem] uppercase tracking-widest">Explore</span>
+        <ChevronDown className="h-5 w-5" />
       </div>
     </section>
   );

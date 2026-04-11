@@ -1,4 +1,6 @@
 import { Stats } from "@/components/sections/Stats";
+import { Milestones } from "@/components/sections/Milestones";
+import { RegionalImpact } from "@/components/sections/RegionalImpact";
 import { Story } from "@/components/sections/Story";
 import { ImpactStrip } from "@/components/sections/ImpactStrip";
 import { Partners } from "@/components/sections/Partners";
@@ -38,6 +40,8 @@ export default function ImpactPage() {
 
       <ImpactStrip />
       <Stats />
+      
+      <Milestones />
 
       {/* Case Study Section */}
       <section className="bg-sand py-20 px-8 md:px-12 md:py-24">
@@ -94,9 +98,11 @@ export default function ImpactPage() {
         </div>
       </section>
 
+      <RegionalImpact />
+
       <Story />
       
-      {/* Long-term impact visualization placeholder */}
+      {/* Long-term impact visualization */}
       <section className="bg-cream py-20 px-8 md:px-12 md:py-24 border-y border-earth/5">
         <div className="mx-auto max-w-4xl text-center">
           <div className="mb-4 text-[0.72rem] font-medium uppercase tracking-[0.16em] text-terra">

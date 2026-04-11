@@ -1,5 +1,8 @@
 import { Mission } from "@/components/sections/Mission";
+import { Values } from "@/components/sections/Values";
 import { Stats } from "@/components/sections/Stats";
+import { WhereWeWork } from "@/components/sections/WhereWeWork";
+import { Leadership } from "@/components/sections/Leadership";
 import { Story } from "@/components/sections/Story";
 import { Partners } from "@/components/sections/Partners";
 import { Donate } from "@/components/sections/Donate";
@@ -38,15 +41,17 @@ export default function AboutPage() {
 
       {/* Main Sections */}
       <Mission />
+      <Values />
       <Stats />
+      <WhereWeWork />
 
-      {/* Founder/Team Section */}
+      {/* History Section */}
       <section className="bg-cream py-20 px-8 md:px-12 md:py-24 border-y border-earth/5">
         <div className="mx-auto max-w-7xl">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
             <div className="relative aspect-square rounded-sm overflow-hidden shadow-xl">
               <Image
-                src="/IMG_0994.JPG.jpeg"
+                src="/IMG_0989.JPG.jpeg"
                 alt="Our movement in action"
                 fill
                 className="object-cover"
@@ -72,6 +77,7 @@ export default function AboutPage() {
         </div>
       </section>
 
+      <Leadership />
       <Story />
       <Partners />
       <Donate />

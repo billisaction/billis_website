@@ -2,6 +2,7 @@
 
 import * as React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
@@ -26,22 +27,11 @@ export function Navbar() {
     <nav className="sticky top-0 z-50 w-full font-sans bg-earth px-6 py-4 md:px-10" aria-label="Main Navigation">
       <div className="mx-auto flex max-w-7xl items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2.5" aria-label="Bilis Initiative Home">
-          <div className="flex h-9 w-9 items-center justify-center rounded-full bg-terra">
-            <svg viewBox="0 0 20 20" fill="none" className="h-5 w-5">
-              <circle cx="10" cy="10" r="8" stroke="white" strokeWidth="1.5" />
-              <path
-                d="M10 4 L10 16 M6 7 Q10 5 14 7"
-                stroke="white"
-                strokeWidth="1.2"
-                strokeLinecap="round"
-              />
-            </svg>
-          </div>
-          <span className="font-serif text-lg tracking-wide text-sand">
-            Bilis <span className="text-terra-light">Initiative</span>
-          </span>
-        </Link>
+        <Link href="/" aria-label="Bilis Initiative Home">
+  
+  <img src="/main-logo.png" alt="Bilis Initiative logo" className="w-auto h-20 object-contain" />
+
+</Link>
 
         {/* Desktop Navigation */}
         <div className="hidden items-center gap-8 md:flex">

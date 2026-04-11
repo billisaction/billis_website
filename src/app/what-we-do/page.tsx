@@ -1,4 +1,6 @@
 import { Programs } from "@/components/sections/Programs";
+import { Process } from "@/components/sections/Process";
+import { Resources } from "@/components/sections/Resources";
 import { Objectives } from "@/components/sections/Objectives";
 import { Donate } from "@/components/sections/Donate";
 import Image from "next/image";
@@ -37,8 +39,10 @@ export default function WhatWeDoPage() {
       {/* Main Content */}
       <Programs />
       
+      <Process />
+
       {/* Detailed Approach */}
-      <section className="bg-sand py-20 px-8 md:px-12 md:py-24">
+      <section className="bg-sand py-20 px-8 md:px-12 md:py-24 border-y border-earth/5">
         <div className="mx-auto max-w-7xl">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
             <div>
@@ -80,6 +84,7 @@ export default function WhatWeDoPage() {
       </section>
 
       <Objectives />
+      <Resources />
       <Donate />
     </main>
   );

@@ -56,23 +56,23 @@ export function Hero() {
           {/* Floating Cards */}
           <div className="absolute inset-8 flex flex-col items-center justify-center gap-6">
             <div className="flex items-center gap-6">
-              <div className="flex h-[90px] w-[90px] items-center justify-center rounded-full border border-terra/40 bg-terra/25">
-                <div className="flex h-[55px] w-[55px] items-center justify-center rounded-full bg-terra">
+              {/* <div className="flex h-[90px] w-[90px] items-center justify-center rounded-full border border-terra/40 bg-terra/25"> */}
+                {/* <div className="flex h-[55px] w-[55px] items-center justify-center rounded-full bg-terra">
                   <MapPin className="h-[22px] w-[22px] text-white" />
-                </div>
-              </div>
-              <div className="max-w-[200px] rounded-sm border border-white/12 bg-white/7 p-4 md:p-5">
+                </div> */}
+              {/* </div> */}
+              {/* <div className="max-w-[200px] rounded-sm border border-white/12 bg-white/7 p-4 md:p-5">
                 <p className="mb-1 text-[0.75rem] uppercase tracking-wider text-sand/50">Our reach</p>
                 <p className="font-serif text-[1.3rem] font-bold text-sand">3 countries</p>
                 <p className="text-[0.75rem] text-sand/40">Somali Reginal State </p>
-              </div>
+              </div> */}
             </div>
-            <div className="rounded-sm border border-white/10 bg-white/6 p-5 md:p-6">
+            {/* <div className="rounded-sm border border-white/10 bg-white/6 p-5 md:p-6">
               <p className="mb-2 text-[0.72rem] uppercase tracking-widest text-sand/45">Survivor-centred since day one</p>
               <p className="text-[0.9rem] leading-relaxed text-sand/75">
                 Rooted in cultural understanding, guided by those who know it most.
               </p>
-            </div>
+            </div> */}
           </div>
 
           {/* Hero Stat Bar */}

@@ -4,7 +4,7 @@ import { Mission } from "@/components/sections/Mission";
 import { Stats } from "@/components/sections/Stats";
 import { Programs } from "@/components/sections/Programs";
 import { LatestNews } from "@/components/sections/LatestNews";
-import { Story } from "@/components/sections/Story";
+// import { Story } from "@/components/sections/Story";
 import { Objectives } from "@/components/sections/Objectives";
 import { HowYouCanHelp } from "@/components/sections/HowYouCanHelp";
 import { Donate } from "@/components/sections/Donate";
@@ -20,7 +20,7 @@ export default function Home() {
       <Stats />
       <Programs />
       <LatestNews />
-      <Story />
+      {/* <Story /> */}
       <Objectives />
       <HowYouCanHelp />
       <Donate />

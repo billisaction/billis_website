@@ -16,7 +16,7 @@ import {
 const navLinks = [
   { name: "What We Do", href: "/what-we-do" },
   { name: "Impact", href: "/impact" },
-  { name: "Stories", href: "/impact#stories" },
+  // { name: "Stories", href: "/impact#stories" },
   { name: "About Us", href: "/about" },
 ];
 

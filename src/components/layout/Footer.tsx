@@ -55,7 +55,7 @@ export function Footer() {
             </Link>
             <p className="mt-6 max-w-[260px] text-[0.85rem] leading-[1.75] text-sand-dark/50">
               A community-driven organisation ending FGM and advancing the
-              rights, dignity, and empowerment of women and girls in Somali
+              rights, dignity, and empowerment of women and girls in Somali Regional State and Kenya
               communities.
             </p>
           </div>

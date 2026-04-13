@@ -2,7 +2,7 @@ import { Mission } from "@/components/sections/Mission";
 import { Values } from "@/components/sections/Values";
 import { Stats } from "@/components/sections/Stats";
 import { WhereWeWork } from "@/components/sections/WhereWeWork";
-import { Leadership } from "@/components/sections/Leadership";
+// import { Leadership } from "@/components/sections/Leadership";
 import { Story } from "@/components/sections/Story";
 import { Partners } from "@/components/sections/Partners";
 import { Donate } from "@/components/sections/Donate";
@@ -66,7 +66,7 @@ export default function AboutPage() {
               </h2>
               <div className="flex flex-col gap-6 text-[1rem] leading-relaxed text-earth-mid">
                 <p>
-                  What started as a single conversation in a community hall has grown into a multi-country initiative spanning the UK, Somalia, and Kenya.
+                  What started as a single conversation in a community hall has grown into a multi-country initiative spanning the Somali Regional State and Ethiopia.
                 </p>
                 <p>
                   Our work has always been about more than just stopping a practice; it's about reclaiming the narrative of empowerment and dignity that has always been present in our culture.
@@ -77,7 +77,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <Leadership />
+      {/* <Leadership /> */}
       <Story />
       <Partners />
       <Donate />

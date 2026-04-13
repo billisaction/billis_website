@@ -2,17 +2,17 @@ import { MapPin } from "lucide-react";
 
 const locations = [
   {
-    name: "Somalia",
+    name: "Somali Reginal State",
     region: "East Africa",
     focus: "Community-led behavioral change programs and policy advocacy.",
   },
   {
-    name: "Kenya",
+    name: "Oramia Reginal State",
     region: "East Africa",
     focus: "Empowering adolescent girls through education and support networks.",
   },
   {
-    name: "United Kingdom",
+    name: "Somali Reginal State",
     region: "Western Europe",
     focus: "Advancing legal protections and community-led awareness initiatives.",
   },

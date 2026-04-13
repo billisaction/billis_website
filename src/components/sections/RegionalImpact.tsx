@@ -2,7 +2,7 @@ import { Badge } from "@/components/ui/badge";
 
 const regionalStats = [
   {
-    region: "Somalia",
+    region: "Somali Reginal State",
     impact: "Behavioral Change",
     stats: [
       { label: "Villages", value: "25+" },
@@ -11,7 +11,7 @@ const regionalStats = [
     ],
   },
   {
-    region: "Kenya",
+    region: "Oramia Reginal State",
     impact: "Girl Empowerment",
     stats: [
       { label: "Schools Partnered", value: "15" },
@@ -20,7 +20,7 @@ const regionalStats = [
     ],
   },
   {
-    region: "United Kingdom",
+    region: "Somali Reginal State",
     impact: "Policy & Awareness",
     stats: [
       { label: "Awareness Campaigns", value: "10+" },

@@ -12,7 +12,7 @@ const newsItems = [
     excerpt: "Our team presented survivor-led solutions to end FGM at the 80th session of the UNGA, advocating for policy change.",
   },
   {
-    title: "New Training Centre Opened in Galkayo",
+    title: "New Training Centre Opened in Goday",
     date: "Sep 28, 2025",
     category: "Community",
     image: "/IMG_0989.JPG.jpeg",

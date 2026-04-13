@@ -10,14 +10,14 @@ export function Programs() {
       tag: "Education",
       desc: "Equipping adolescent girls with life skills, knowledge of their rights, and the confidence to speak up — in school, at home, and in their communities.",
       bg: "bg-gradient-to-br from-terra-dark to-terra",
-      image: "/IMG_0989.JPG.jpeg",
+      image: "/IMG_0994.JPG.jpeg",
     },
     {
       title: "Community & Family Dialogue",
       tag: "Engagement",
       desc: "Bringing together families, religious leaders, and men to open honest conversations about FGM — and to build shared commitments to end it.",
       bg: "bg-gradient-to-br from-terra to-terra-light",
-      image: "/IMG_0994.JPG.jpeg",
+      image: "/IMG_0989.JPG.jpeg",
     },
     {
       title: "Policy & Legal Advocacy",

@@ -64,7 +64,7 @@ export function Hero() {
               <div className="max-w-[200px] rounded-sm border border-white/12 bg-white/7 p-4 md:p-5">
                 <p className="mb-1 text-[0.75rem] uppercase tracking-wider text-sand/50">Our reach</p>
                 <p className="font-serif text-[1.3rem] font-bold text-sand">3 countries</p>
-                <p className="text-[0.75rem] text-sand/40">UK · Somalia · Kenya</p>
+                <p className="text-[0.75rem] text-sand/40">Somali Reginal State </p>
               </div>
             </div>
             <div className="rounded-sm border border-white/10 bg-white/6 p-5 md:p-6">

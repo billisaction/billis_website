@@ -12,7 +12,7 @@ export function Stats() {
     },
     {
       num: "90%",
-      label: "Prevalence in Somalia",
+      label: "Prevalence in Somali Regional State",
       desc: "One of the highest rates globally",
     },
     {

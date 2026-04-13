@@ -2,7 +2,7 @@ const milestones = [
   {
     year: "2018",
     title: "The First Dialogue",
-    desc: "Bilis Initiative was founded with a single community dialogue session in Galkayo, Somalia.",
+    desc: "Bilis Initiative was founded with a single community dialogue session in Goday, Somali Regional State.",
   },
   {
     year: "2020",

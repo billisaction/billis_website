@@ -33,14 +33,15 @@ export function LatestNews() {
       <div className="mx-auto max-w-7xl">
         <div className="flex flex-wrap items-end justify-between gap-6 mb-12">
           <div>
-            <div className="mb-4 text-[0.72rem] font-medium uppercase tracking-[0.16em] text-terra">
+            <div className="mb-4 flex items-center gap-2.5 text-[0.72rem] font-medium uppercase tracking-[0.16em] text-terra">
+              <span className="h-px w-7 bg-gold"></span>
               Stay Updated
             </div>
             <h2 className="font-serif text-[2.2rem] font-bold text-earth md:text-[2.8rem]">
               Latest News & Stories
             </h2>
           </div>
-          <Link href="#" className="text-terra hover:text-terra-light font-medium uppercase tracking-widest text-[0.8rem] transition-colors border-b border-terra pb-1">
+          <Link href="#" className="text-terra hover:text-gold font-medium uppercase tracking-widest text-[0.8rem] transition-colors border-b border-gold pb-1">
             View All Updates ↗
           </Link>
         </div>
@@ -71,9 +72,9 @@ export function LatestNews() {
                 <p className="text-[0.85rem] leading-relaxed text-earth-mid mb-4">
                   {item.excerpt}
                 </p>
-                <Link href="#" className="inline-block text-[0.75rem] font-bold uppercase tracking-widest text-terra hover:text-terra-light">
-                  Read Story →
-                </Link>
+                <Link href="#" className="inline-block text-[0.75rem] font-bold uppercase tracking-widest text-terra hover:text-gold">
+                    Read Story →
+                  </Link>
               </CardContent>
             </Card>
           ))}

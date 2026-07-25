@@ -27,13 +27,13 @@ export default function AboutPage() {
           priority
         />
         <div className="mx-auto max-w-7xl text-center relative z-10">
-          <div className="mb-4 text-[0.72rem] font-medium uppercase tracking-[0.16em] text-terra-light">
+          <div className="mb-4 text-[0.72rem] font-medium uppercase tracking-[0.16em] text-gold">
             Our Story
           </div>
           <h1 className="font-serif text-[2.8rem] font-black text-sand md:text-[4rem] leading-tight max-w-4xl mx-auto">
-            Ending FGM. Advancing rights. <em className="not-italic text-terra-light">Building community.</em>
+            Ending FGM. Advancing rights. <em className="not-italic text-gold">Building community.</em>
           </h1>
-          <p className="mt-8 text-[1.1rem] leading-relaxed text-[#B8A898] max-w-2xl mx-auto">
+          <p className="mt-8 text-[1.1rem] leading-relaxed text-[#C4B0C8] max-w-2xl mx-auto">
             Bilis Initiative was born out of a deep-seated belief that every girl in Somali communities deserves to grow up whole, protected, and empowered to reach her full potential.
           </p>
         </div>
@@ -58,7 +58,8 @@ export default function AboutPage() {
               />
             </div>
             <div>
-              <div className="mb-4 text-[0.72rem] font-medium uppercase tracking-[0.16em] text-terra">
+              <div className="mb-4 flex items-center gap-2.5 text-[0.72rem] font-medium uppercase tracking-[0.16em] text-terra">
+                <span className="h-px w-7 bg-gold"></span>
                 Our History
               </div>
               <h2 className="font-serif text-[2.2rem] font-bold text-earth md:text-[2.8rem] mb-6 leading-tight">

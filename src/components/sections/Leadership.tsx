@@ -27,7 +27,8 @@ export function Leadership() {
     <section className="bg-cream py-20 px-8 md:px-12 md:py-24 border-y border-earth/5">
       <div className="mx-auto max-w-7xl">
         <div className="text-center mb-16">
-          <div className="mb-4 text-[0.72rem] font-medium uppercase tracking-[0.16em] text-terra">
+          <div className="mb-4 flex items-center justify-center gap-2.5 text-[0.72rem] font-medium uppercase tracking-[0.16em] text-terra">
+            <span className="h-px w-7 bg-gold"></span>
             Our Team
           </div>
           <h2 className="font-serif text-[2.2rem] font-bold text-earth md:text-[2.8rem] mb-6">

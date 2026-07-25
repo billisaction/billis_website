@@ -4,7 +4,7 @@ export function Story() {
   return (
     <section id="stories" className="bg-terra-dark px-8 py-20 md:px-12 md:py-24">
       <div className="mx-auto max-w-4xl text-center">
-        <div className="mb-4 text-[0.72rem] font-medium uppercase tracking-[0.16em] text-terra-light">
+        <div className="mb-4 text-[0.72rem] font-medium uppercase tracking-[0.16em] text-gold">
           Survivor voices
         </div>
         <h2 className="mb-12 font-serif text-[2.2rem] font-bold text-sand md:text-[2.8rem]">
@@ -12,7 +12,7 @@ export function Story() {
         </h2>
 
         <div className="relative mb-12 px-8 py-4 text-center italic md:px-12">
-          <span className="absolute left-0 top-0 font-serif text-[6rem] leading-none text-terra opacity-40">
+          <span className="absolute left-0 top-0 font-serif text-[6rem] leading-none text-gold/40">
             "
           </span>
           <p className="font-serif text-[1.2rem] leading-relaxed text-sand/90 md:text-[1.7rem]">

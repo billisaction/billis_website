@@ -26,7 +26,7 @@ export function Stats() {
     <section id="stats" className="bg-earth px-8 py-20 md:px-12 md:py-24">
       <div className="mx-auto max-w-7xl">
         <div className="mb-16 text-center">
-          <div className="mb-4 text-[0.72rem] font-medium uppercase tracking-[0.16em] text-terra-light">
+          <div className="mb-4 text-[0.72rem] font-medium uppercase tracking-[0.16em] text-gold">
             The scale of this
           </div>
           <h2 className="font-serif text-[2.2rem] font-bold text-sand md:text-[2.8rem]">
@@ -42,7 +42,7 @@ export function Stats() {
                 idx === stats.length - 1 ? "md:border-r-0" : ""
               }`}
             >
-              <div className="font-serif text-[3.2rem] font-black leading-none text-terra-light">
+              <div className="font-serif text-[3.2rem] font-black leading-none text-gold">
                 {stat.num}
               </div>
               <div className="mt-4 text-[0.78rem] uppercase tracking-widest text-sand-dark/55">

@@ -23,13 +23,13 @@ export function WhereWeWork() {
     <section className="bg-earth py-20 px-8 md:px-12 md:py-24">
       <div className="mx-auto max-w-7xl">
         <div className="text-center mb-16">
-          <div className="mb-4 text-[0.72rem] font-medium uppercase tracking-[0.16em] text-terra-light">
+          <div className="mb-4 text-[0.72rem] font-medium uppercase tracking-[0.16em] text-gold">
             Our Reach
           </div>
           <h2 className="font-serif text-[2.2rem] font-bold text-sand md:text-[2.8rem] mb-6">
             Where we work for change
           </h2>
-          <p className="mx-auto max-w-2xl text-[1rem] leading-relaxed text-[#B8A898]">
+          <p className="mx-auto max-w-2xl text-[1rem] leading-relaxed text-[#C4B0C8]">
             Our mission spans multiple regions, working closely with Somali communities across the globe.
           </p>
         </div>
@@ -37,11 +37,11 @@ export function WhereWeWork() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {locations.map((location) => (
             <div key={location.name} className="bg-white/5 border border-white/10 p-8 rounded-sm hover:bg-white/10 transition-all duration-300">
-              <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-full bg-terra/20">
-                <MapPin className="h-6 w-6 text-terra" />
+              <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-full bg-gold/15">
+                <MapPin className="h-6 w-6 text-gold" />
               </div>
               <h3 className="font-serif text-[1.5rem] font-bold text-sand mb-2">{location.name}</h3>
-              <div className="mb-4 text-[0.7rem] font-bold uppercase tracking-widest text-terra-light">
+              <div className="mb-4 text-[0.7rem] font-bold uppercase tracking-widest text-gold">
                 {location.region}
               </div>
               <p className="text-[0.85rem] leading-relaxed text-sand/60">

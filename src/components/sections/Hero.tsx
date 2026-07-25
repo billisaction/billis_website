@@ -9,14 +9,14 @@ export function Hero() {
       <div className="grid h-full grid-cols-1 md:grid-cols-2">
         {/* Hero Content */}
         <div className="z-10 flex flex-col justify-center px-8 py-20 md:px-14 md:py-24">
-          <div className="mb-6 flex items-center gap-2.5 text-[0.75rem] font-medium uppercase tracking-[0.15em] text-terra-light">
-            <span className="h-px w-7 bg-terra-light"></span>
+          <div className="mb-6 flex items-center gap-2.5 text-[0.75rem] font-medium uppercase tracking-[0.15em] text-gold">
+            <span className="h-px w-7 bg-gold"></span>
             Ending FGM. Empowering Girls.
           </div>
           <h1 className="mb-6 font-serif text-[2.6rem] font-black leading-[1.1] text-sand md:text-[3.8rem]">
-            Every girl deserves to grow up <em className="not-italic text-terra-light">whole.</em>
+            Every girl deserves to grow up <em className="not-italic text-gold">whole.</em>
           </h1>
-          <p className="mb-10 max-w-[460px] text-[1.05rem] leading-[1.75] text-[#B8A898]">
+          <p className="mb-10 max-w-[500px] text-[1.05rem] leading-[1.75] text-sand-dark">
             Bilis Initiative works with Somali communities to end Female Genital Mutilation — through education, empowerment, and lasting cultural change.
           </p>
           <div className="flex flex-wrap gap-4">

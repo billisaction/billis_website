@@ -3,17 +3,17 @@ import { Button } from "@/components/ui/button";
 
 const resources = [
   {
-    icon: <BookOpen className="h-6 w-6 text-terra" />,
+    icon: <BookOpen className="h-6 w-6 text-gold" />,
     title: "Community Training Toolkit",
     desc: "A comprehensive guide for community leaders to facilitate dialogue on FGM and social norms.",
   },
   {
-    icon: <Download className="h-6 w-6 text-terra" />,
+    icon: <Download className="h-6 w-6 text-gold" />,
     title: "Annual Impact Report 2024",
     desc: "Detailed insights into our programs, reach, and the measurable impact of our community initiatives.",
   },
   {
-    icon: <MessageCircle className="h-6 w-6 text-terra" />,
+    icon: <MessageCircle className="h-6 w-6 text-gold" />,
     title: "Survivor Voices Series",
     desc: "A collection of stories and perspectives from survivors leading behavioral change in their villages.",
   },
@@ -24,7 +24,8 @@ export function Resources() {
     <section className="bg-sand py-20 px-8 md:px-12 md:py-24">
       <div className="mx-auto max-w-7xl">
         <div className="text-center mb-16">
-          <div className="mb-4 text-[0.72rem] font-medium uppercase tracking-[0.16em] text-terra">
+          <div className="mb-4 flex items-center justify-center gap-2.5 text-[0.72rem] font-medium uppercase tracking-[0.16em] text-terra">
+            <span className="h-px w-7 bg-gold"></span>
             Empowerment Tools
           </div>
           <h2 className="font-serif text-[2.2rem] font-bold text-earth md:text-[2.8rem] mb-6">
@@ -38,7 +39,7 @@ export function Resources() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {resources.map((resource) => (
             <div key={resource.title} className="bg-cream p-8 rounded-sm border border-earth/5 shadow-sm hover:shadow-md transition-shadow">
-              <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-full bg-terra/10">
+              <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-full bg-earth">
                 {resource.icon}
               </div>
               <h3 className="font-serif text-[1.25rem] font-bold text-earth mb-4">{resource.title}</h3>

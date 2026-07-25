@@ -16,7 +16,8 @@ export function Donate() {
   return (
     <section id="donate" className="bg-terra px-8 py-20 text-center md:px-12 md:py-24">
       <div className="mx-auto max-w-7xl">
-        <div className="mb-4 text-[0.72rem] font-medium uppercase tracking-[0.16em] text-white/65">
+        <div className="mb-4 flex items-center justify-center gap-2.5 text-[0.72rem] font-medium uppercase tracking-[0.16em] text-gold">
+          <span className="h-px w-7 bg-gold"></span>
           Make a difference
         </div>
         <h2 className="mb-6 font-serif text-[2.2rem] font-bold text-white md:text-[2.8rem]">
@@ -34,7 +35,7 @@ export function Donate() {
               aria-pressed={activeTier === tier.amount}
               className={`h-auto flex flex-col items-center gap-1 rounded-sm border px-7 py-4 font-sans transition-all duration-200 ${
                 activeTier === tier.amount
-                  ? "border-white bg-white/25 text-white"
+                  ? "border-gold bg-white/25 text-white"
                   : "border-white/25 bg-white/12 text-white hover:bg-white/25"
               }`}
             >

@@ -39,7 +39,7 @@ export function Navbar() {
             <Link
               key={link.name}
               href={link.href}
-              className="font-sans text-[0.85rem] uppercase tracking-widest text-sand-dark transition-colors hover:text-terra-light"
+              className="font-sans text-[0.85rem] uppercase tracking-widest text-sand-dark transition-colors hover:text-gold"
             >
               {link.name}
             </Link>
@@ -63,7 +63,7 @@ export function Navbar() {
             <SheetContent side="right" className="bg-earth text-sand border-none">
               <SheetHeader>
                 <SheetTitle className="text-left font-serif text-sand">
-                  Bilis <span className="text-terra-light">Initiative</span>
+                  Bilis <span className="text-gold">Initiative</span>
                 </SheetTitle>
               </SheetHeader>
               <div className="mt-8 flex flex-col gap-6">
@@ -72,7 +72,7 @@ export function Navbar() {
                     key={link.name}
                     href={link.href}
                     onClick={() => setIsOpen(false)}
-                    className="font-sans text-[0.85rem] uppercase tracking-widest text-sand-dark transition-colors hover:text-terra-light"
+                    className="font-sans text-[0.85rem] uppercase tracking-widest text-sand-dark transition-colors hover:text-gold"
                   >
                     {link.name}
                   </Link>

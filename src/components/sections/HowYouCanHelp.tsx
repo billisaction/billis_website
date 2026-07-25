@@ -5,25 +5,25 @@ import Link from "next/link";
 
 const helpWays = [
   {
-    icon: <Share2 className="h-6 w-6 text-terra" />,
+    icon: <Share2 className="h-6 w-6 text-gold" />,
     title: "Spread Awareness",
     desc: "Share our mission and impact stories on your social platforms to help us reach more people.",
     cta: "Share Story",
   },
   {
-    icon: <Users className="h-6 w-6 text-terra" />,
+    icon: <Users className="h-6 w-6 text-gold" />,
     title: "Volunteer with Us",
     desc: "Join our dedicated team of volunteers and contribute your skills to support our various programs.",
     cta: "Join Now",
   },
   {
-    icon: <Mail className="h-6 w-6 text-terra" />,
+    icon: <Mail className="h-6 w-6 text-gold" />,
     title: "Newsletter Signup",
     desc: "Subscribe to our newsletter and stay updated with our latest initiatives and impact stories.",
     cta: "Subscribe",
   },
   {
-    icon: <HandHeart className="h-6 w-6 text-terra" />,
+    icon: <HandHeart className="h-6 w-6 text-gold" />,
     title: "Partner with Us",
     desc: "Collaborate with us to develop and implement innovative programs for community empowerment.",
     cta: "Contact Us",
@@ -35,13 +35,13 @@ export function HowYouCanHelp() {
     <section className="bg-earth py-20 px-8 md:px-12 md:py-24">
       <div className="mx-auto max-w-7xl">
         <div className="text-center mb-16">
-          <div className="mb-4 text-[0.72rem] font-medium uppercase tracking-[0.16em] text-terra-light">
+          <div className="mb-4 text-[0.72rem] font-medium uppercase tracking-[0.16em] text-gold">
             Get Involved
           </div>
           <h2 className="font-serif text-[2.2rem] font-bold text-sand md:text-[2.8rem] mb-6">
             Other ways to support our mission
           </h2>
-          <p className="mx-auto max-w-2xl text-[1rem] leading-relaxed text-[#B8A898]">
+          <p className="mx-auto max-w-2xl text-[1rem] leading-relaxed text-[#C4B0C8]">
             Beyond donations, there are many ways you can contribute to ending FGM and empowering girls in Somali communities.
           </p>
         </div>

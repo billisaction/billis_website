@@ -33,7 +33,8 @@ export function Objectives() {
     <section id="about" className="bg-sand px-8 py-20 md:px-12 md:py-24">
       <div className="mx-auto max-w-7xl">
         <div className="mb-12">
-          <div className="mb-4 text-[0.72rem] font-medium uppercase tracking-[0.16em] text-terra">
+          <div className="mb-4 flex items-center gap-2.5 text-[0.72rem] font-medium uppercase tracking-[0.16em] text-terra">
+            <span className="h-px w-7 bg-gold"></span>
             Our objectives
           </div>
           <h2 className="font-serif text-[2.2rem] font-bold text-earth md:text-[2.8rem]">
@@ -45,10 +46,10 @@ export function Objectives() {
           {objectives.map((obj) => (
             <Card
               key={obj.num}
-              className="group rounded-sm border-none bg-cream p-6 shadow-sm transition-all duration-300 hover:border-t-4 hover:border-terra"
+              className="group rounded-sm border-none bg-cream p-6 shadow-sm transition-all duration-300 hover:border-t-4 hover:border-gold"
             >
               <CardHeader className="p-0 mb-4">
-                <div className="font-serif text-[1.8rem] font-black text-sand-dark">
+                <div className="font-serif text-[1.8rem] font-black text-terra">
                   {obj.num}
                 </div>
                 <CardTitle className="mt-2 text-[0.82rem] font-medium leading-tight text-earth">

@@ -26,7 +26,8 @@ export function Mission() {
         <div className="grid grid-cols-1 items-start gap-16 md:grid-cols-2">
           {/* Text Content */}
           <div className="flex flex-col">
-            <div className="mb-4 text-[0.72rem] font-medium uppercase tracking-[0.16em] text-terra">
+            <div className="mb-4 flex items-center gap-2.5 text-[0.72rem] font-medium uppercase tracking-[0.16em] text-terra">
+              <span className="h-px w-7 bg-gold"></span>
               Who we are
             </div>
             <h2 className="mb-6 font-serif text-[2.2rem] font-bold leading-tight text-earth md:text-[2.8rem]">
@@ -66,7 +67,7 @@ export function Mission() {
             {pillars.map((pillar) => (
               <div
                 key={pillar.title}
-                className="rounded-sm border-l-4 border-terra bg-cream p-5 shadow-sm"
+                className="rounded-sm border-l-4 border-gold bg-cream p-5 shadow-sm"
               >
                 <h4 className="mb-1 text-[0.9rem] font-medium text-earth">
                   {pillar.title}

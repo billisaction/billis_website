@@ -24,13 +24,13 @@ export default function WhatWeDoPage() {
           priority
         />
         <div className="mx-auto max-w-7xl relative z-10">
-          <div className="mb-4 text-[0.72rem] font-medium uppercase tracking-[0.16em] text-terra-light">
+          <div className="mb-4 text-[0.72rem] font-medium uppercase tracking-[0.16em] text-gold">
             Our Impact
           </div>
           <h1 className="font-serif text-[2.8rem] font-black text-sand md:text-[4rem] leading-tight max-w-3xl">
-            Building a future where every girl is <em className="not-italic text-terra-light">safe and empowered.</em>
+            Building a future where every girl is <em className="not-italic text-gold">safe and empowered.</em>
           </h1>
-          <p className="mt-8 text-[1.1rem] leading-relaxed text-[#B8A898] max-w-2xl">
+          <p className="mt-8 text-[1.1rem] leading-relaxed text-[#C4B0C8] max-w-2xl">
             Our work is rooted in community trust and survivor voices. We focus on long-term systemic change through education, dialogue, and advocacy.
           </p>
         </div>
@@ -46,7 +46,8 @@ export default function WhatWeDoPage() {
         <div className="mx-auto max-w-7xl">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
             <div>
-              <div className="mb-4 text-[0.72rem] font-medium uppercase tracking-[0.16em] text-terra">
+              <div className="mb-4 flex items-center gap-2.5 text-[0.72rem] font-medium uppercase tracking-[0.16em] text-terra">
+                <span className="h-px w-7 bg-gold"></span>
                 Our Approach
               </div>
               <h2 className="font-serif text-[2.2rem] font-bold text-earth md:text-[2.8rem] mb-6">
@@ -70,7 +71,7 @@ export default function WhatWeDoPage() {
                   { title: "Youth Leadership", desc: "We train young girls to be the primary advocates in their own schools." },
                 ].map((item) => (
                   <li key={item.title} className="flex gap-4">
-                    <div className="mt-1 h-2 w-2 rounded-full bg-terra shrink-0"></div>
+                    <div className="mt-1 h-2 w-2 rounded-full bg-gold shrink-0"></div>
                     <div>
                       <h4 className="font-medium text-earth text-[0.95rem] mb-1">{item.title}</h4>
                       <p className="text-[0.85rem] text-earth-mid leading-relaxed">{item.desc}</p>

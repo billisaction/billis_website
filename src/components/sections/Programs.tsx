@@ -33,7 +33,8 @@ export function Programs() {
       <div className="mx-auto max-w-7xl">
         <div className="flex flex-wrap items-end justify-between gap-6 mb-12">
           <div className="flex flex-col">
-            <div className="mb-4 text-[0.72rem] font-medium uppercase tracking-[0.16em] text-terra">
+            <div className="mb-4 flex items-center gap-2.5 text-[0.72rem] font-medium uppercase tracking-[0.16em] text-terra">
+              <span className="h-px w-7 bg-gold"></span>
               What we do
             </div>
             <h2 className="font-serif text-[2.2rem] font-bold text-earth md:text-[2.8rem]">

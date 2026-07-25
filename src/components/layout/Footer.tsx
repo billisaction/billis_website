@@ -54,7 +54,7 @@ export function Footer() {
           {/* Links Cols */}
           {footerLinks.map((col) => (
             <div key={col.title}>
-              <h5 className="mb-5 text-[0.72rem] uppercase tracking-[0.12em] text-terra-light">
+              <h5 className="mb-5 text-[0.72rem] uppercase tracking-[0.12em] text-gold">
                 {col.title}
               </h5>
               <div className="flex flex-col gap-2.5">

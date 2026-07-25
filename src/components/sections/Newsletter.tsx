@@ -26,7 +26,8 @@ export function Newsletter() {
       <div className="mx-auto max-w-7xl">
         <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-16">
           <div>
-            <div className="mb-4 text-[0.72rem] font-medium uppercase tracking-[0.16em] text-terra">
+            <div className="mb-4 flex items-center gap-2.5 text-[0.72rem] font-medium uppercase tracking-[0.16em] text-terra">
+              <span className="h-px w-7 bg-gold"></span>
               Stay Connected
             </div>
             <h2 className="font-serif text-[2.2rem] font-bold text-earth md:text-[2.8rem] mb-6 leading-tight">
@@ -40,8 +41,8 @@ export function Newsletter() {
           <div className="bg-cream p-8 md:p-12 rounded-sm border border-earth/5 shadow-sm">
             {isSuccess ? (
               <div className="text-center">
-                <div className="h-16 w-16 bg-terra/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <Send className="h-8 w-8 text-terra" />
+                <div className="h-16 w-16 bg-earth rounded-full flex items-center justify-center mx-auto mb-6">
+                  <Send className="h-8 w-8 text-gold" />
                 </div>
                 <h3 className="font-serif text-[1.5rem] font-bold text-earth mb-4">Thank you for joining us!</h3>
                 <p className="text-[0.95rem] text-earth-mid mb-8">

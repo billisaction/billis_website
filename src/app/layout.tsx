@@ -44,6 +44,9 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+  icons: {
+    icon: [{ url: "/favicon.svg", type: "image/svg+xml" }],
+  },
 };
 
 export default function RootLayout({
@@ -65,7 +68,7 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col font-sans bg-cream text-earth">
         <Navbar />
-        <div className="h-1 w-full bg-gradient-to-r from-terra-dark via-terra to-gold"></div>
+        <div className="h-1 w-full bg-linear-to-r from-terra-dark via-terra to-gold"></div>
         <div className="flex-1">{children}</div>
         <Footer />
       </body>

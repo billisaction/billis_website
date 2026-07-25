@@ -29,7 +29,7 @@ export function Navbar() {
         {/* Logo */}
         <Link href="/" aria-label="Bilis Initiative Home">
   
-  <img src="/main-logo.png" alt="Bilis Initiative logo" className="w-auto h-20 object-contain" />
+  <img src="/logo-white.svg" alt="Bilis Initiative logo" className="w-auto h-14 md:h-10 object-contain" />
 
 </Link>
 

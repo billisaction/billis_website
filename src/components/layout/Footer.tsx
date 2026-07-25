@@ -37,23 +37,14 @@ export function Footer() {
         <div className="grid grid-cols-1 gap-12 md:grid-cols-4 md:gap-8">
           {/* Brand Col */}
           <div className="md:col-span-1">
-            <Link href="/" className="flex items-center gap-2.5" aria-label="Bilis Initiative Home">
-              <div className="flex h-9 w-9 items-center justify-center rounded-full bg-terra">
-                <svg viewBox="0 0 20 20" fill="none" className="h-5 w-5">
-                  <circle cx="10" cy="10" r="8" stroke="white" strokeWidth="1.5" />
-                  <path
-                    d="M10 4 L10 16 M6 7 Q10 5 14 7"
-                    stroke="white"
-                    strokeWidth="1.2"
-                    strokeLinecap="round"
-                  />
-                </svg>
-              </div>
-              <span className="font-serif text-lg tracking-wide text-sand">
-                Bilis <span className="text-terra-light">Initiative</span>
-              </span>
+            <Link href="/" className="inline-flex items-center" aria-label="Bilis Initiative Home">
+              <img
+                src="/logo-white.svg"
+                alt="Bilis Initiative logo"
+                className="h-14 w-auto object-contain"
+              />
             </Link>
-            <p className="mt-6 max-w-[260px] text-[0.85rem] leading-[1.75] text-sand-dark/50">
+            <p className="mt-6 max-w-65 text-[0.85rem] leading-[1.75] text-sand-dark/50">
               A community-driven organisation ending FGM and advancing the
               rights, dignity, and empowerment of women and girls in Somali Regional State and Kenya
               communities.
@@ -84,7 +75,7 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="mt-12 flex flex-col items-center justify-between border-t border-white/10 pt-6 md:mt-20 md:flex-row">
           <p className="text-[0.78rem] text-sand-dark/30">
-            © 2025 Bilis Initiative. All rights reserved.
+            © 2026 Bilis Initiative. All rights reserved.
           </p>
           <div className="mt-4 flex items-center gap-4 text-[0.72rem] tracking-wide text-sand-dark/25 md:mt-0">
             <span>Registered Charity No. 1234567</span>

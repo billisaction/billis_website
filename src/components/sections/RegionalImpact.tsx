@@ -49,7 +49,7 @@ export function RegionalImpact() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {regionalStats.map((region) => (
-            <div key={region.region} className="bg-cream p-8 rounded-sm border border-earth/5 shadow-sm hover:shadow-md transition-shadow">
+            <div key={`${region.region}-${region.impact}`} className="bg-cream p-8 rounded-sm border border-earth/5 shadow-sm hover:shadow-md transition-shadow">
               <div className="mb-4 text-[0.7rem] font-bold uppercase tracking-widest text-terra">
                 {region.impact}
               </div>

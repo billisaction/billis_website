@@ -42,22 +42,22 @@ export function Objectives() {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 gap-4 md:grid-cols-5">
+        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-5">
           {objectives.map((obj) => (
             <Card
               key={obj.num}
-              className="group rounded-sm border-none bg-cream p-6 shadow-sm transition-all duration-300 hover:border-t-4 hover:border-gold"
+              className="group rounded-sm border-0 border-t-2 border-gold bg-white p-7 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md"
             >
               <CardHeader className="p-0 mb-4">
-                <div className="font-serif text-[1.8rem] font-black text-terra">
+                <div className="font-serif text-[2rem] font-black leading-none text-terra">
                   {obj.num}
                 </div>
-                <CardTitle className="mt-2 text-[0.82rem] font-medium leading-tight text-earth">
+                <CardTitle className="mt-3 text-[0.95rem] font-semibold leading-snug text-earth">
                   {obj.title}
                 </CardTitle>
               </CardHeader>
               <CardContent className="p-0">
-                <p className="text-[0.75rem] leading-relaxed text-earth-mid">
+                <p className="text-[0.84rem] leading-relaxed text-earth-mid">
                   {obj.desc}
                 </p>
               </CardContent>

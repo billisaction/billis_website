@@ -1,82 +1,74 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import Link from "next/link";
 import Image from "next/image";
+import Link from "next/link";
 
-const newsItems = [
+const stories = [
   {
     title: "Bilis Initiative at the UN General Assembly",
-    date: "Oct 12, 2025",
+    date: "October 2025",
     category: "Advocacy",
     image: "/IMG_0997.JPG.jpeg",
-    excerpt: "Our team presented survivor-led solutions to end FGM at the 80th session of the UNGA, advocating for policy change.",
+    excerpt: "Bringing survivor-led solutions and community perspectives into global conversations on ending FGM.",
   },
   {
-    title: "New Training Centre Opened in Goday",
-    date: "Sep 28, 2025",
+    title: "A new training centre for girls in Goday",
+    date: "September 2025",
     category: "Community",
     image: "/IMG_0989.JPG.jpeg",
-    excerpt: "The centre will serve as a safe space for adolescent girls to receive life-skills training and vocational support.",
+    excerpt: "A dedicated space for life-skills training, peer support, and pathways to opportunity.",
   },
   {
-    title: "Voices of Courage: 2025 Impact Report",
-    date: "Aug 15, 2025",
-    category: "Report",
+    title: "Voices of courage: our impact in 2025",
+    date: "August 2025",
+    category: "Impact",
     image: "/IMG_0995.JPG.jpeg",
-    excerpt: "Our latest annual report highlights the progress made in community dialogue and behavioral change in 15 new villages.",
+    excerpt: "Community dialogue and youth leadership are helping new villages build safer futures for girls.",
   },
 ];
 
 export function LatestNews() {
   return (
-    <section className="bg-cream py-20 px-8 md:px-12 md:py-24">
+    <section className="bg-white px-6 py-20 sm:px-8 md:px-12 md:py-28">
       <div className="mx-auto max-w-7xl">
-        <div className="flex flex-wrap items-end justify-between gap-6 mb-12">
+        <div className="mb-12 grid gap-7 border-b border-earth/12 pb-9 md:grid-cols-[1fr_auto] md:items-end">
           <div>
-            <div className="mb-4 flex items-center gap-2.5 text-[0.72rem] font-medium uppercase tracking-[0.16em] text-terra">
-              <span className="h-px w-7 bg-gold"></span>
-              Stay Updated
+            <div className="mb-5 flex items-center gap-3 text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-terra">
+              <span className="h-px w-8 bg-gold" aria-hidden="true" />
+              From the field
             </div>
-            <h2 className="font-serif text-[2.2rem] font-bold text-earth md:text-[2.8rem]">
-              Latest News & Stories
+            <h2 className="font-serif text-[clamp(2.4rem,4vw,4rem)] font-bold leading-[1.03] tracking-[-0.025em] text-earth">
+              Stories of change
             </h2>
           </div>
-          <Link href="#" className="text-terra hover:text-gold font-medium uppercase tracking-widest text-[0.8rem] transition-colors border-b border-gold pb-1">
-            View All Updates ↗
+          <Link
+            href="/impact/"
+            className="group inline-flex min-h-11 items-center text-[0.78rem] font-semibold uppercase tracking-[0.14em] text-terra"
+          >
+            Explore our impact <span className="ml-2 transition-transform duration-200 group-hover:translate-x-1">→</span>
           </Link>
         </div>
 
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
-          {newsItems.map((item) => (
-            <Card key={item.title} className="group border-none bg-sand/30 shadow-none hover:shadow-sm transition-all duration-300 overflow-hidden">
-              <div className="relative h-[220px] w-full overflow-hidden">
+        <div className="grid gap-10 md:grid-cols-3">
+          {stories.map((story, index) => (
+            <article key={story.title} className="group">
+              <div className={`relative overflow-hidden ${index === 0 ? "aspect-[5/4]" : "aspect-[4/3]"}`}>
                 <Image
-                  src={item.image}
-                  alt={item.title}
+                  src={story.image}
+                  alt={story.title}
                   fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  sizes="(min-width: 768px) 33vw, 100vw"
+                  className="object-cover transition-transform duration-700 group-hover:scale-[1.025]"
                 />
-                <Badge className="absolute top-4 left-4 bg-white/90 text-earth hover:bg-white border-none rounded-none text-[0.65rem] uppercase tracking-widest">
-                  {item.category}
-                </Badge>
               </div>
-              <CardContent className="p-6">
-                <div className="mb-3 text-[0.7rem] uppercase tracking-widest text-earth-mid/60">
-                  {item.date}
+              <div className="pt-6">
+                <div className="flex items-center gap-3 text-[0.7rem] font-semibold uppercase tracking-[0.12em] text-terra">
+                  <span>{story.category}</span>
+                  <span className="h-1 w-1 rounded-full bg-gold" aria-hidden="true" />
+                  <span className="text-earth-mid/75">{story.date}</span>
                 </div>
-                <CardHeader className="p-0 mb-4">
-                  <CardTitle className="font-serif text-[1.25rem] font-bold text-earth leading-tight group-hover:text-terra transition-colors">
-                    {item.title}
-                  </CardTitle>
-                </CardHeader>
-                <p className="text-[0.85rem] leading-relaxed text-earth-mid mb-4">
-                  {item.excerpt}
-                </p>
-                <Link href="#" className="inline-block text-[0.75rem] font-bold uppercase tracking-widest text-terra hover:text-gold">
-                    Read Story →
-                  </Link>
-              </CardContent>
-            </Card>
+                <h3 className="mt-4 font-serif text-[1.45rem] font-bold leading-[1.18] text-earth">{story.title}</h3>
+                <p className="mt-4 text-[0.9rem] leading-[1.7] text-earth-mid">{story.excerpt}</p>
+              </div>
+            </article>
           ))}
         </div>
       </div>

@@ -2,58 +2,53 @@ const steps = [
   {
     num: "01",
     title: "Community Assessment",
-    desc: "We begin by understanding the specific cultural and social dynamics of each village through local leadership engagement.",
+    desc: "We begin by understanding the cultural and social dynamics of each village through local leadership.",
   },
   {
     num: "02",
     title: "Survivor-Led Dialogue",
-    desc: "We facilitate honest conversations led by survivors, focusing on shared values of health, safety, and empowerment.",
+    desc: "Honest conversations led by survivors focus on shared values of health, safety, and empowerment.",
   },
   {
     num: "03",
     title: "Youth Empowerment",
-    desc: "We provide adolescent girls with life-skills training and vocational support to build their confidence and future.",
+    desc: "Adolescent girls receive life-skills training and support that builds confidence and agency.",
   },
   {
     num: "04",
     title: "Public Declaration",
-    desc: "Communities collectively declare their commitment to ending FGM, establishing new social norms of protection.",
+    desc: "Communities declare their commitment to ending FGM and establish new norms of protection.",
   },
 ];
 
 export function Process() {
   return (
-    <section className="bg-earth py-20 px-8 md:px-12 md:py-24">
+    <section className="bg-white px-6 py-20 sm:px-8 md:px-12 md:py-28">
       <div className="mx-auto max-w-7xl">
-        <div className="text-center mb-16">
-          <div className="mb-4 text-[0.72rem] font-medium uppercase tracking-[0.16em] text-gold">
-            Our Method
+        <div className="mb-14 max-w-3xl">
+          <div className="mb-5 flex items-center gap-3 text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-terra">
+            <span className="h-px w-8 bg-gold" aria-hidden="true" />
+            Our method
           </div>
-          <h2 className="font-serif text-[2.2rem] font-bold text-sand md:text-[2.8rem] mb-6">
+          <h2 className="font-serif text-[clamp(2.4rem,4vw,4rem)] font-bold leading-[1.03] tracking-[-0.025em] text-earth">
             How we drive community change
           </h2>
-          <p className="mx-auto max-w-2xl text-[1rem] leading-relaxed text-[#C4B0C8]">
-            Our systematic approach ensures that change is built from within the community, ensuring long-term sustainability.
+          <p className="mt-6 max-w-2xl text-[1rem] leading-[1.75] text-earth-mid">
+            Change is built from within. Our approach is designed for trust, participation, and long-term sustainability.
           </p>
         </div>
 
-        <div className="relative">
-          {/* Connector Line (Desktop) */}
-          <div className="absolute top-1/2 left-0 w-full h-px bg-white/10 hidden md:block -translate-y-1/2"></div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 relative z-10">
-            {steps.map((step) => (
-              <div key={step.num} className="bg-white/5 border border-white/10 p-8 rounded-sm hover:bg-white/10 transition-all duration-300">
-                <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-full bg-gold text-earth font-serif text-xl font-bold">
-                  {step.num}
-                </div>
-                <h3 className="font-serif text-[1.25rem] font-bold text-sand mb-4">{step.title}</h3>
-                <p className="text-[0.85rem] leading-relaxed text-sand/60">
-                  {step.desc}
-                </p>
-              </div>
-            ))}
-          </div>
+        <div className="grid gap-0 md:grid-cols-4">
+          {steps.map((step, index) => (
+            <div
+              key={step.num}
+              className={`border-t border-earth/15 py-8 md:border-t-0 md:border-l md:px-7 md:first:border-l-0 md:first:pl-0 ${index === 0 ? "" : ""}`}
+            >
+              <div className="font-serif text-[2rem] font-black leading-none text-terra">{step.num}</div>
+              <h3 className="mt-5 font-serif text-[1.3rem] font-bold text-earth">{step.title}</h3>
+              <p className="mt-4 text-[0.9rem] leading-[1.7] text-earth-mid">{step.desc}</p>
+            </div>
+          ))}
         </div>
       </div>
     </section>

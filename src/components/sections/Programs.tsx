@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Image from "next/image";
+import Link from "next/link";
 
 export function Programs() {
   const programs = [
@@ -23,13 +24,13 @@ export function Programs() {
       title: "Policy & Legal Advocacy",
       tag: "Advocacy",
       desc: "Pushing for the enforcement of laws and policies against FGM, and amplifying survivor voices at local, national, and international levels.",
-      bg: "bg-gradient-to-br from-black to-terra-dark",
+      bg: "bg-gradient-to-br from-terra-dark to-terra",
       image: "/IMG_0995.JPG.jpeg",
     },
   ];
 
   return (
-    <section id="programs" className="bg-cream px-8 py-20 md:px-12 md:py-24">
+    <section id="programs" className="bg-sand px-6 py-20 sm:px-8 md:px-12 md:py-28">
       <div className="mx-auto max-w-7xl">
         <div className="flex flex-wrap items-end justify-between gap-6 mb-12">
           <div className="flex flex-col">
@@ -41,8 +42,12 @@ export function Programs() {
               Our programmes
             </h2>
           </div>
-          <Button className="h-auto rounded-sm bg-terra px-6 py-3 text-[0.9rem] font-medium uppercase tracking-wider hover:bg-terra-light">
-            View all programmes ↗
+          <Button
+            render={<Link href="/what-we-do/" />}
+            nativeButton={false}
+            className="group h-auto rounded-sm bg-terra px-6 py-3 text-[0.82rem] font-semibold uppercase tracking-[0.1em] text-white hover:bg-terra-dark"
+          >
+            View all programmes <span className="ml-2 transition-transform duration-200 group-hover:translate-x-1">→</span>
           </Button>
         </div>
 
@@ -50,29 +55,37 @@ export function Programs() {
           {programs.map((program) => (
             <Card
               key={program.title}
-              className="group cursor-pointer overflow-hidden border-none bg-sand shadow-sm transition-transform duration-300 hover:-translate-y-1"
+              className="group overflow-hidden border border-earth/10 bg-white shadow-none transition-all duration-300 hover:-translate-y-1 hover:border-terra/25 hover:shadow-md"
             >
-              <div className={`h-[180px] w-full p-6 flex items-end relative overflow-hidden`}>
+              <div className={`h-[230px] w-full p-6 flex items-end relative overflow-hidden`}>
                 <Image
                   src={program.image}
                   alt={program.title}
                   fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  sizes="(min-width: 768px) 33vw, 100vw"
+                  className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
                 />
-                <div className={`absolute inset-0 opacity-40 mix-blend-multiply ${program.bg}`}></div>
+                <div className={`absolute inset-0 opacity-15 mix-blend-multiply ${program.bg}`}></div>
+                <div aria-hidden className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-black/45 to-transparent"></div>
                 <Badge className="rounded-sm bg-terra text-[0.68rem] uppercase tracking-widest text-white hover:bg-terra relative z-10">
                   {program.tag}
                 </Badge>
               </div>
               <CardContent className="p-6 md:p-8">
                 <CardHeader className="p-0 mb-4">
-                  <CardTitle className="font-serif text-[1.15rem] font-bold text-earth">
+                  <CardTitle className="font-serif text-[1.35rem] font-bold text-earth">
                     {program.title}
                   </CardTitle>
                 </CardHeader>
-                <p className="text-[0.83rem] leading-relaxed text-earth-mid">
+                <p className="text-[0.92rem] leading-relaxed text-earth-mid">
                   {program.desc}
                 </p>
+                <Link
+                  href="/what-we-do/#programs"
+                  className="mt-6 inline-flex min-h-11 items-center text-[0.74rem] font-semibold uppercase tracking-[0.12em] text-terra"
+                >
+                  Learn more <span className="ml-2 transition-transform duration-200 group-hover:translate-x-1">→</span>
+                </Link>
               </CardContent>
             </Card>
           ))}

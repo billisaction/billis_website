@@ -16,26 +16,36 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <main>
+    <div>
       {/* About Hero */}
-      <section className="bg-earth py-20 px-8 md:px-12 md:py-32 relative overflow-hidden">
+      <section className="relative flex min-h-[55vh] items-center overflow-hidden bg-cream md:min-h-[65vh]">
         <Image
-          src="/IMG_0997.JPG.jpeg"
-          alt="Community leadership"
+          src="/hero-workshop-2.png"
+          alt="Bilis Initiative facilitators leading a community session"
           fill
-          className="object-cover opacity-20"
           priority
+          sizes="100vw"
+          className="object-cover object-[center_25%]"
         />
-        <div className="mx-auto max-w-7xl text-center relative z-10">
-          <div className="mb-4 text-[0.72rem] font-medium uppercase tracking-[0.16em] text-gold">
-            Our Story
+        <div
+          aria-hidden
+          className="absolute inset-0 bg-[linear-gradient(90deg,rgba(255,255,255,0.97)_0%,rgba(255,255,255,0.94)_36%,rgba(255,255,255,0.72)_52%,rgba(255,255,255,0.15)_72%,rgba(255,255,255,0)_90%)]"
+        />
+        <div className="relative z-10 w-full px-8 py-20 md:px-12 md:py-24">
+          <div className="mx-auto max-w-7xl">
+            <div className="max-w-[660px]">
+              <div className="mb-4 flex items-center gap-2.5 text-[0.72rem] font-medium uppercase tracking-[0.16em] text-terra">
+                <span className="h-px w-7 bg-gold"></span>
+                Our Story
+              </div>
+              <h1 className="font-serif text-[2.8rem] font-black text-earth md:text-[4rem] leading-[1.08]">
+                Ending FGM. Advancing rights. <em className="not-italic text-terra">Building community.</em>
+              </h1>
+              <p className="mt-8 text-[1.1rem] leading-relaxed text-earth-mid max-w-xl">
+                Bilis Initiative was born out of a deep-seated belief that every girl in Somali communities deserves to grow up whole, protected, and empowered to reach her full potential.
+              </p>
+            </div>
           </div>
-          <h1 className="font-serif text-[2.8rem] font-black text-sand md:text-[4rem] leading-tight max-w-4xl mx-auto">
-            Ending FGM. Advancing rights. <em className="not-italic text-gold">Building community.</em>
-          </h1>
-          <p className="mt-8 text-[1.1rem] leading-relaxed text-[#C4B0C8] max-w-2xl mx-auto">
-            Bilis Initiative was born out of a deep-seated belief that every girl in Somali communities deserves to grow up whole, protected, and empowered to reach her full potential.
-          </p>
         </div>
       </section>
 
@@ -82,6 +92,6 @@ export default function AboutPage() {
       <Story />
       <Partners />
       <Donate />
-    </main>
+    </div>
   );
 }

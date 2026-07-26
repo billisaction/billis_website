@@ -13,26 +13,36 @@ export const metadata: Metadata = {
 
 export default function WhatWeDoPage() {
   return (
-    <main>
+    <div>
       {/* Subpage Hero */}
-      <section className="bg-earth py-20 px-8 md:px-12 md:py-32 relative overflow-hidden">
+      <section className="relative flex min-h-[55vh] items-center overflow-hidden bg-cream md:min-h-[65vh]">
         <Image
-          src="/IMG_0996.JPG.jpeg"
-          alt="Community empowerment"
+          src="/hero-workshop-3.png"
+          alt="Young people in a Bilis Initiative workshop holding truth and falsehood cards"
           fill
-          className="object-cover opacity-20"
           priority
+          sizes="100vw"
+          className="object-cover object-[center_30%]"
         />
-        <div className="mx-auto max-w-7xl relative z-10">
-          <div className="mb-4 text-[0.72rem] font-medium uppercase tracking-[0.16em] text-gold">
-            Our Impact
+        <div
+          aria-hidden
+          className="absolute inset-0 bg-[linear-gradient(90deg,rgba(255,255,255,0.97)_0%,rgba(255,255,255,0.94)_36%,rgba(255,255,255,0.72)_52%,rgba(255,255,255,0.15)_72%,rgba(255,255,255,0)_90%)]"
+        />
+        <div className="relative z-10 w-full px-8 py-20 md:px-12 md:py-24">
+          <div className="mx-auto max-w-7xl">
+            <div className="max-w-[660px]">
+              <div className="mb-4 flex items-center gap-2.5 text-[0.72rem] font-medium uppercase tracking-[0.16em] text-terra">
+                <span className="h-px w-7 bg-gold"></span>
+                What We Do
+              </div>
+              <h1 className="font-serif text-[2.8rem] font-black text-earth md:text-[4rem] leading-[1.08]">
+                Building a future where every girl is <em className="not-italic text-terra">safe and empowered.</em>
+              </h1>
+              <p className="mt-8 text-[1.1rem] leading-relaxed text-earth-mid max-w-xl">
+                Our work is rooted in community trust and survivor voices. We focus on long-term systemic change through education, dialogue, and advocacy.
+              </p>
+            </div>
           </div>
-          <h1 className="font-serif text-[2.8rem] font-black text-sand md:text-[4rem] leading-tight max-w-3xl">
-            Building a future where every girl is <em className="not-italic text-gold">safe and empowered.</em>
-          </h1>
-          <p className="mt-8 text-[1.1rem] leading-relaxed text-[#C4B0C8] max-w-2xl">
-            Our work is rooted in community trust and survivor voices. We focus on long-term systemic change through education, dialogue, and advocacy.
-          </p>
         </div>
       </section>
 
@@ -42,7 +52,7 @@ export default function WhatWeDoPage() {
       <Process />
 
       {/* Detailed Approach */}
-      <section className="bg-sand py-20 px-8 md:px-12 md:py-24 border-y border-earth/5">
+      <section className="bg-cream py-20 px-6 sm:px-8 md:px-12 md:py-28">
         <div className="mx-auto max-w-7xl">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
             <div>
@@ -62,7 +72,7 @@ export default function WhatWeDoPage() {
                 </p>
               </div>
             </div>
-            <div className="bg-cream p-8 md:p-12 rounded-sm border border-earth/5 shadow-sm">
+            <div className="bg-sand p-8 md:p-12 rounded-sm border border-earth/5 shadow-sm">
               <h3 className="font-serif text-[1.5rem] font-bold text-earth mb-6">Why our method works</h3>
               <ul className="flex flex-col gap-6">
                 {[
@@ -87,6 +97,6 @@ export default function WhatWeDoPage() {
       <Objectives />
       <Resources />
       <Donate />
-    </main>
+    </div>
   );
 }

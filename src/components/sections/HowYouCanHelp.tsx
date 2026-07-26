@@ -1,75 +1,72 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Share2, Users, Mail, HandHeart } from "lucide-react";
-import Link from "next/link";
+import { HandHeart, Mail, Share2, Users } from "lucide-react";
 
-const helpWays = [
+const ways = [
   {
-    icon: <Share2 className="h-6 w-6 text-gold" />,
-    title: "Spread Awareness",
-    desc: "Share our mission and impact stories on your social platforms to help us reach more people.",
-    cta: "Share Story",
+    icon: Share2,
+    title: "Share our mission",
+    desc: "Help more people understand why community-led action to end FGM matters.",
+    cta: "Share by email",
+    href: "mailto:?subject=Support%20Bilis%20Initiative&body=Learn%20about%20Bilis%20Initiative%27s%20community-led%20work%20to%20end%20FGM%3A%20https%3A%2F%2Fbillisaction.org%2F",
   },
   {
-    icon: <Users className="h-6 w-6 text-gold" />,
-    title: "Volunteer with Us",
-    desc: "Join our dedicated team of volunteers and contribute your skills to support our various programs.",
-    cta: "Join Now",
+    icon: Users,
+    title: "Volunteer your skills",
+    desc: "Contribute your time and experience to programmes, communications, or operations.",
+    cta: "Volunteer with us",
+    href: "mailto:hello@billisaction.org?subject=Volunteer%20with%20Bilis%20Initiative",
   },
   {
-    icon: <Mail className="h-6 w-6 text-gold" />,
-    title: "Newsletter Signup",
-    desc: "Subscribe to our newsletter and stay updated with our latest initiatives and impact stories.",
-    cta: "Subscribe",
+    icon: Mail,
+    title: "Stay informed",
+    desc: "Receive occasional updates about our work, impact, and community priorities.",
+    cta: "Join the newsletter",
+    href: "#newsletter",
   },
   {
-    icon: <HandHeart className="h-6 w-6 text-gold" />,
-    title: "Partner with Us",
-    desc: "Collaborate with us to develop and implement innovative programs for community empowerment.",
-    cta: "Contact Us",
+    icon: HandHeart,
+    title: "Build a partnership",
+    desc: "Work with us on programmes that protect girls and strengthen local leadership.",
+    cta: "Start a conversation",
+    href: "mailto:hello@billisaction.org?subject=Partnership%20with%20Bilis%20Initiative",
   },
 ];
 
 export function HowYouCanHelp() {
   return (
-    <section className="bg-earth py-20 px-8 md:px-12 md:py-24">
+    <section className="bg-sand px-6 py-20 sm:px-8 md:px-12 md:py-28">
       <div className="mx-auto max-w-7xl">
-        <div className="text-center mb-16">
-          <div className="mb-4 text-[0.72rem] font-medium uppercase tracking-[0.16em] text-gold">
-            Get Involved
+        <div className="grid gap-12 lg:grid-cols-[0.7fr_1.3fr] lg:gap-24">
+          <div>
+            <div className="mb-5 flex items-center gap-3 text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-terra">
+              <span className="h-px w-8 bg-gold" aria-hidden="true" />
+              Get involved
+            </div>
+            <h2 className="max-w-[11ch] font-serif text-[clamp(2.4rem,4vw,4rem)] font-bold leading-[1.03] tracking-[-0.025em] text-earth">
+              Change takes all of us.
+            </h2>
+            <p className="mt-6 max-w-md text-[1rem] leading-[1.75] text-earth-mid">
+              Give, volunteer, share, or partner with us. Choose the role that is right for you.
+            </p>
           </div>
-          <h2 className="font-serif text-[2.2rem] font-bold text-sand md:text-[2.8rem] mb-6">
-            Other ways to support our mission
-          </h2>
-          <p className="mx-auto max-w-2xl text-[1rem] leading-relaxed text-[#C4B0C8]">
-            Beyond donations, there are many ways you can contribute to ending FGM and empowering girls in Somali communities.
-          </p>
-        </div>
 
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-4">
-          {helpWays.map((way) => (
-            <Card key={way.title} className="bg-white/5 border border-white/10 p-6 md:p-8 hover:bg-white/10 transition-all duration-300">
-              <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-full bg-white/10">
-                {way.icon}
-              </div>
-              <CardHeader className="p-0 mb-4">
-                <CardTitle className="font-serif text-[1.25rem] font-bold text-sand leading-tight">
-                  {way.title}
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="p-0 mb-6">
-                <p className="text-[0.85rem] leading-relaxed text-sand/60">
-                  {way.desc}
-                </p>
-              </CardContent>
-              <Button 
-                variant="outline" 
-                className="w-full rounded-sm border-white/20 bg-transparent text-[0.75rem] font-bold uppercase tracking-widest text-sand hover:bg-white hover:text-earth transition-colors"
-              >
-                {way.cta}
-              </Button>
-            </Card>
-          ))}
+          <div className="grid sm:grid-cols-2">
+            {ways.map((way) => {
+              const Icon = way.icon;
+              return (
+                <div key={way.title} className="border-t border-earth/15 py-8 sm:odd:pr-8 sm:even:pl-8">
+                  <Icon className="h-6 w-6 text-terra" strokeWidth={1.7} aria-hidden="true" />
+                  <h3 className="mt-6 font-serif text-[1.4rem] font-bold text-earth">{way.title}</h3>
+                  <p className="mt-3 text-[0.9rem] leading-[1.7] text-earth-mid">{way.desc}</p>
+                  <a
+                    href={way.href}
+                    className="group mt-5 inline-flex min-h-11 items-center text-[0.74rem] font-semibold uppercase tracking-[0.12em] text-terra"
+                  >
+                    {way.cta} <span className="ml-2 transition-transform duration-200 group-hover:translate-x-1">→</span>
+                  </a>
+                </div>
+              );
+            })}
+          </div>
         </div>
       </div>
     </section>

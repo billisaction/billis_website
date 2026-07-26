@@ -15,26 +15,36 @@ export const metadata: Metadata = {
 
 export default function ImpactPage() {
   return (
-    <main>
+    <div>
       {/* Impact Hero */}
-      <section className="bg-earth py-20 px-8 md:px-12 md:py-32 relative overflow-hidden">
+      <section className="relative flex min-h-[55vh] items-center overflow-hidden bg-cream md:min-h-[65vh]">
         <Image
           src="/IMG_0995.JPG.jpeg"
-          alt="Impact background"
+          alt="Community members at a Bilis Initiative event"
           fill
-          className="object-cover opacity-25"
           priority
+          sizes="100vw"
+          className="object-cover object-center"
         />
-        <div className="mx-auto max-w-7xl relative z-10">
-          <div className="mb-4 text-[0.72rem] font-medium uppercase tracking-[0.16em] text-gold">
-            Our Results
+        <div
+          aria-hidden
+          className="absolute inset-0 bg-[linear-gradient(90deg,rgba(255,255,255,0.97)_0%,rgba(255,255,255,0.94)_36%,rgba(255,255,255,0.72)_52%,rgba(255,255,255,0.15)_72%,rgba(255,255,255,0)_90%)]"
+        />
+        <div className="relative z-10 w-full px-8 py-20 md:px-12 md:py-24">
+          <div className="mx-auto max-w-7xl">
+            <div className="max-w-[660px]">
+              <div className="mb-4 flex items-center gap-2.5 text-[0.72rem] font-medium uppercase tracking-[0.16em] text-terra">
+                <span className="h-px w-7 bg-gold"></span>
+                Our Results
+              </div>
+              <h1 className="font-serif text-[2.8rem] font-black text-earth md:text-[4rem] leading-[1.08]">
+                Measuring the change we build <em className="not-italic text-terra">together.</em>
+              </h1>
+              <p className="mt-8 text-[1.1rem] leading-relaxed text-earth-mid max-w-xl">
+                From individual lives to community-wide transformations, our impact is measured in the safety, health, and empowerment of girls and women.
+              </p>
+            </div>
           </div>
-          <h1 className="font-serif text-[2.8rem] font-black text-sand md:text-[4rem] leading-tight max-w-4xl">
-            Measuring the change we build <em className="not-italic text-gold">together.</em>
-          </h1>
-          <p className="mt-8 text-[1.1rem] leading-relaxed text-[#C4B0C8] max-w-2xl">
-            From individual lives to community-wide transformations, our impact is measured in the safety, health, and empowerment of girls and women.
-          </p>
         </div>
       </section>
 
@@ -133,6 +143,6 @@ export default function ImpactPage() {
 
       <Partners />
       <Donate />
-    </main>
+    </div>
   );
 }

@@ -1,56 +1,62 @@
-import { Download, BookOpen, MessageCircle } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { BookOpen, Download, MessageCircle } from "lucide-react";
 
 const resources = [
   {
-    icon: <BookOpen className="h-6 w-6 text-gold" />,
+    icon: BookOpen,
     title: "Community Training Toolkit",
-    desc: "A comprehensive guide for community leaders to facilitate dialogue on FGM and social norms.",
+    desc: "A practical guide for community leaders facilitating dialogue on FGM and social norms.",
+    href: "mailto:hello@billisaction.org?subject=Request%20Community%20Training%20Toolkit",
   },
   {
-    icon: <Download className="h-6 w-6 text-gold" />,
+    icon: Download,
     title: "Annual Impact Report 2024",
-    desc: "Detailed insights into our programs, reach, and the measurable impact of our community initiatives.",
+    desc: "Insights into our programmes, reach, and the measurable progress communities are making.",
+    href: "mailto:hello@billisaction.org?subject=Request%20Annual%20Impact%20Report%202024",
   },
   {
-    icon: <MessageCircle className="h-6 w-6 text-gold" />,
+    icon: MessageCircle,
     title: "Survivor Voices Series",
-    desc: "A collection of stories and perspectives from survivors leading behavioral change in their villages.",
+    desc: "Stories and perspectives from survivors leading behavioural change in their villages.",
+    href: "mailto:hello@billisaction.org?subject=Request%20Survivor%20Voices%20Series",
   },
 ];
 
 export function Resources() {
   return (
-    <section className="bg-sand py-20 px-8 md:px-12 md:py-24">
+    <section className="bg-sand px-6 py-20 sm:px-8 md:px-12 md:py-28">
       <div className="mx-auto max-w-7xl">
-        <div className="text-center mb-16">
-          <div className="mb-4 flex items-center justify-center gap-2.5 text-[0.72rem] font-medium uppercase tracking-[0.16em] text-terra">
-            <span className="h-px w-7 bg-gold"></span>
-            Empowerment Tools
+        <div className="mb-14 max-w-3xl">
+          <div className="mb-5 flex items-center gap-3 text-[0.72rem] font-semibold uppercase tracking-[0.18em] text-terra">
+            <span className="h-px w-8 bg-gold" aria-hidden="true" />
+            Resources
           </div>
-          <h2 className="font-serif text-[2.2rem] font-bold text-earth md:text-[2.8rem] mb-6">
-            Resources for our communities
+          <h2 className="font-serif text-[clamp(2.4rem,4vw,4rem)] font-bold leading-[1.03] tracking-[-0.025em] text-earth">
+            Tools for communities
           </h2>
-          <p className="mx-auto max-w-2xl text-[1rem] leading-relaxed text-earth-mid">
-            We provide a variety of resources to help our communities build safe and empowering environments for girls.
+          <p className="mt-6 max-w-2xl text-[1rem] leading-[1.75] text-earth-mid">
+            Practical materials that help communities build safer, more empowering environments for girls.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {resources.map((resource) => (
-            <div key={resource.title} className="bg-cream p-8 rounded-sm border border-earth/5 shadow-sm hover:shadow-md transition-shadow">
-              <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-full bg-earth">
-                {resource.icon}
+        <div className="grid gap-0 md:grid-cols-3">
+          {resources.map((resource) => {
+            const Icon = resource.icon;
+            return (
+              <div key={resource.title} className="border-t border-earth/15 py-8 md:border-t-0 md:border-l md:px-8 md:first:border-l-0 md:first:pl-0">
+                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-terra text-gold">
+                  <Icon className="h-5 w-5" aria-hidden="true" />
+                </div>
+                <h3 className="mt-6 font-serif text-[1.4rem] font-bold text-earth">{resource.title}</h3>
+                <p className="mt-4 text-[0.9rem] leading-[1.7] text-earth-mid">{resource.desc}</p>
+                <a
+                  href={resource.href}
+                  className="group mt-6 inline-flex min-h-11 items-center text-[0.74rem] font-semibold uppercase tracking-[0.12em] text-terra"
+                >
+                  Request access <span className="ml-2 transition-transform duration-200 group-hover:translate-x-1">→</span>
+                </a>
               </div>
-              <h3 className="font-serif text-[1.25rem] font-bold text-earth mb-4">{resource.title}</h3>
-              <p className="text-[0.85rem] leading-relaxed text-earth-mid mb-6">
-                {resource.desc}
-              </p>
-              <Button variant="outline" className="w-full rounded-sm border-terra text-terra hover:bg-terra hover:text-white transition-colors">
-                Download Resource
-              </Button>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>

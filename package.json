@@ -4,9 +4,12 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "preview": "npx --yes serve out -l 4000",
+    "package": "npm run build && rm -f bilis-site.zip && cd out && zip -qr -X ../bilis-site.zip . && cd .. && echo 'Created bilis-site.zip'"
   },
   "dependencies": {
     "@base-ui/react": "^1.3.0",

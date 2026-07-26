@@ -18,6 +18,7 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://billisaction.org"),
   title: {
     default: "Bilis Initiative | Ending FGM, Empowering Girls",
     template: "%s | Bilis Initiative",
@@ -30,7 +31,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_GB",
-    url: "https://bilis-initiative.org",
+    url: "https://billisaction.org",
     title: "Bilis Initiative | Ending FGM, Empowering Girls",
     description: "A community-driven organisation ending FGM and advancing the rights, dignity, and empowerment of women and girls in Somali communities.",
     siteName: "Bilis Initiative",
@@ -67,9 +68,17 @@ export default function RootLayout({
       )}
     >
       <body className="min-h-full flex flex-col font-sans bg-cream text-earth">
+        <a
+          href="#main-content"
+          className="fixed left-4 top-4 z-[100] -translate-y-20 rounded-sm bg-terra px-4 py-3 text-sm font-medium text-white opacity-0 transition focus:translate-y-0 focus:opacity-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2"
+        >
+          Skip to main content
+        </a>
         <Navbar />
-        <div className="h-1 w-full bg-linear-to-r from-terra-dark via-terra to-gold"></div>
-        <div className="flex-1">{children}</div>
+        <div className="h-1 w-full bg-linear-to-r from-terra-dark via-terra to-gold" aria-hidden="true" />
+        <main id="main-content" className="flex-1" tabIndex={-1}>
+          {children}
+        </main>
         <Footer />
       </body>
     </html>

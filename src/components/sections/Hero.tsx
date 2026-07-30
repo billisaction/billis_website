@@ -27,8 +27,9 @@ export function Hero() {
               Ending FGM. Empowering girls.
             </div>
 
-            <h1 className="max-w-[14ch] font-serif text-[clamp(2.25rem,4.2vw,3.75rem)] font-bold leading-[1.08] tracking-[-0.02em] text-white">
-              Every girl deserves to grow up <em className="not-italic text-gold">whole.</em>
+            <h1 className="font-serif text-[clamp(2.25rem,4.2vw,3.75rem)] font-bold leading-[1.08] tracking-[-0.02em] text-white">
+              <span className="block">Every girl deserves</span>
+              <span className="block">to grow up <em className="not-italic text-gold">whole.</em></span>
             </h1>
 
             <p className="mt-6 max-w-520px text-[1.02rem] leading-[1.7] text-white/75 md:text-[1.08rem]">

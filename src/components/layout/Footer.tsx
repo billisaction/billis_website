@@ -13,15 +13,15 @@ const footerLinks = [
     title: "Get Involved",
     links: [
       { name: "Donate", href: "/#donate" },
-      { name: "Volunteer", href: "mailto:hello@billisaction.org?subject=Volunteer%20with%20Bilis%20Initiative" },
-      { name: "Partner with us", href: "mailto:hello@billisaction.org?subject=Partnership%20with%20Bilis%20Initiative" },
+      { name: "Volunteer", href: "mailto:info@billisaction.org?subject=Volunteer%20with%20Bilis%20Initiative" },
+      { name: "Partner with us", href: "mailto:info@billisaction.org?subject=Partnership%20with%20Bilis%20Initiative" },
       { name: "Newsletter", href: "/#newsletter" },
     ],
   },
   {
     title: "Contact",
     links: [
-      { name: "hello@billisaction.org", href: "mailto:hello@billisaction.org" },
+      { name: "info@billisaction.org", href: "mailto:info@billisaction.org" },
       { name: "billisaction.org", href: "https://billisaction.org/" },
     ],
   },

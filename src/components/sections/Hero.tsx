@@ -27,15 +27,15 @@ export function Hero() {
               Ending FGM. Empowering girls.
             </div>
 
-            <h1 className="max-w-[11ch] font-serif text-[clamp(3rem,6vw,5.4rem)] font-black leading-[0.98] tracking-[-0.035em] text-white">
+            <h1 className="max-w-[14ch] font-serif text-[clamp(2.25rem,4.2vw,3.75rem)] font-bold leading-[1.08] tracking-[-0.02em] text-white">
               Every girl deserves to grow up <em className="not-italic text-gold">whole.</em>
             </h1>
 
-            <p className="mt-7 max-w-520px text-[1.02rem] leading-[1.7] text-white/75 md:text-[1.12rem]">
+            <p className="mt-6 max-w-520px text-[1.02rem] leading-[1.7] text-white/75 md:text-[1.08rem]">
               Bilis Initiative works with Somali communities to end Female Genital Mutilation through education, empowerment, and lasting cultural change.
             </p>
 
-            <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+            <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
               <Button
                 render={<Link href="/#donate" />}
                 nativeButton={false}

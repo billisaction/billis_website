@@ -37,7 +37,7 @@ export function WhereWeWork() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {locations.map((location) => (
-            <div key={location.name} className="bg-white border border-earth/10 p-8 rounded-sm shadow-sm transition-all duration-300 hover:border-terra/30 hover:shadow-md">
+            <div key={`${location.name}-${location.region}`} className="bg-white border border-earth/10 p-8 rounded-sm shadow-sm transition-all duration-300 hover:border-terra/30 hover:shadow-md">
               <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-full bg-terra/10">
                 <MapPin className="h-6 w-6 text-terra" />
               </div>

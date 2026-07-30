@@ -15,7 +15,7 @@ export default function WhatWeDoPage() {
   return (
     <div>
       {/* Subpage Hero */}
-      <section className="relative flex min-h-[55vh] items-center overflow-hidden bg-cream md:min-h-[65vh]">
+      <section className="relative flex min-h-[55vh] items-center overflow-hidden bg-earth md:min-h-[65vh]">
         <Image
           src="/hero-workshop-3.png"
           alt="Young people in a Bilis Initiative workshop holding truth and falsehood cards"
@@ -26,19 +26,19 @@ export default function WhatWeDoPage() {
         />
         <div
           aria-hidden
-          className="absolute inset-0 bg-[linear-gradient(90deg,rgba(255,255,255,0.97)_0%,rgba(255,255,255,0.94)_36%,rgba(255,255,255,0.72)_52%,rgba(255,255,255,0.15)_72%,rgba(255,255,255,0)_90%)]"
+          className="absolute inset-0 bg-[linear-gradient(to_top,rgba(10,7,10,0.94)_0%,rgba(10,7,10,0.88)_45%,rgba(10,7,10,0.42)_74%,rgba(10,7,10,0.12)_100%)] md:bg-[linear-gradient(90deg,rgba(10,7,10,0.9)_0%,rgba(10,7,10,0.84)_34%,rgba(10,7,10,0.54)_49%,rgba(10,7,10,0.18)_67%,rgba(10,7,10,0.04)_82%)]"
         />
         <div className="relative z-10 w-full px-8 py-20 md:px-12 md:py-24">
           <div className="mx-auto max-w-7xl">
             <div className="max-w-[660px]">
-              <div className="mb-4 flex items-center gap-2.5 text-[0.72rem] font-medium uppercase tracking-[0.16em] text-terra">
+              <div className="mb-4 flex items-center gap-2.5 text-[0.72rem] font-medium uppercase tracking-[0.16em] text-gold">
                 <span className="h-px w-7 bg-gold"></span>
                 What We Do
               </div>
-              <h1 className="font-serif text-[2.8rem] font-black text-earth md:text-[4rem] leading-[1.08]">
-                Building a future where every girl is <em className="not-italic text-terra">safe and empowered.</em>
+              <h1 className="font-serif text-[2.8rem] font-black text-white md:text-[4rem] leading-[1.08]">
+                Building a future where every girl is <em className="not-italic text-gold">safe and empowered.</em>
               </h1>
-              <p className="mt-8 text-[1.1rem] leading-relaxed text-earth-mid max-w-xl">
+              <p className="mt-8 text-[1.1rem] leading-relaxed text-white/75 max-w-xl">
                 Our work is rooted in community trust and survivor voices. We focus on long-term systemic change through education, dialogue, and advocacy.
               </p>
             </div>

@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
-import { Playfair_Display, DM_Sans } from "next/font/google";
+import { DM_Sans, Poppins } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 
-const playfair = Playfair_Display({
-  variable: "--font-playfair",
+const poppins = Poppins({
+  variable: "--font-poppins",
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800", "900"],
 });
 
 const dmSans = DM_Sans({
@@ -59,7 +60,7 @@ export default function RootLayout({
       className={cn(
         "h-full",
         "antialiased",
-        playfair.variable,
+        poppins.variable,
         dmSans.variable,
         "font-sans"
       )}
